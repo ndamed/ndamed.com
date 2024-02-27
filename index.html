@@ -1,0 +1,416 @@
+<html> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="text-1" class="text">Ana Sayfa</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+    </head>
+
+    <body onload="onload()">
+        <header>
+            <div class="contact-banner">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="icons-2/phone.svg" class="contact-phone">
+                        <label for="phone"></label>
+                        <a href="tel:+90 506 112 24 93" class="phone">+90 506 112 24 93</a>
+                        &nbsp;
+                        /
+                        &nbsp;
+                        <a href="tel:+90 541 600 78 20" class="phone">+90 541 600 78 20</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="icons-2/envelope.svg" class="contact-email">
+                        <a href="mailto:ndacounselling@outlook.com" class="mail">ndacounselling@outlook.com</a>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a target="_blank" href="https://wa.me/+905061122493"><img src="icons-2/whatsapp.svg"></a>
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100011155658706&mibextid=LQQJ4d">
+                        <img src="icons-2/facebook.svg">
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/ndamedhealthandbeauty">
+                        <img src="icons-2/instagram.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="main-header">
+                <div class="logo">
+                    <img src="images/logo-header.png">
+                </div>
+                <div class="menu-container">
+                    <nav class="navbar">
+                        <ul>
+                            <li class="active"><a href="index.html" id="text-2" class="text">Ana Sayfa</a></li>
+                            <li class="passive"><a href="about-us.html" id="text-3" class="text">Hakkımızda</a></li>
+                            <li class="passive"><a href="services.html" id="text-4" class="text">Hizmetlerimiz</a></li>
+                            <li class="passive"><a href="contact-us.html" id="text-5" class="text">İletişim</a></li>
+                        </ul>
+                    </nav>
+                    <div class="language-selector">
+                        <select onchange="handleLanguageSelector(event)">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="menu-container-mobile off">
+                    <input type="checkbox" id="hamburger-button">
+                    <label class="btn" for="hamburger-button" onclick="handleHamburger()">
+                        <img src="icons-2/menu-hamburger.svg" id="btnLeft" />
+                    </label>
+                    <nav class="mobile-navbar">
+                        <ul>
+                            <li class="active"><a href="index.html" class="active text" id="text-6">Ana Sayfa</a></li>
+                            <li class="passive"><a href="about-us.html" id="text-7" class="text">Hakkımızda</a></li>
+                            <li class="passive"><a href="services.html" id="text-8" class="text">Hizmetlerimiz</a></li>
+                            <li class="passive"><a href="contact-us.html" id="text-9" class="text">İletişim</a></li>
+                        </ul>
+                        <div class="language-selector-mobile">
+                            <select onchange="handleLanguageSelector(event)">
+                            </select>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--  ANA SAYFA CONTENTİ  -->
+
+        <main>
+            <div class="content">
+                <h1 id="text-10" class="text">NDA Med'e hoşgeldiniz.</h1>
+                <hr class="hr-1">
+                <h6 id="text-11" class="text">
+                    NDA Med. Sağlık Hizmetleri olarak yurtiçi ve yurtdışından saç ekimi ve dental estetik için gelen tüm misafirlerimize eşsiz bir deneyim sunuyoruz.
+                    Ayrıca Türkiye’nin başkenti Ankara’da sizlere ulaşım hizmeti ve konaklama fırsatı sunuyor, ülkemizde bulunduğunuz süre zarfında size kendinizi evinizde hissettirecek rahatlığı sağlıyoruz.
+                    Özellikle operasyon ve sonraki süreç hakkında birçok soru işareti olan misafirlerimize aşağıdaki garantileri sunmayı kendimize bir görev bildik:
+                </h6>
+                <h6>
+                    <ul>
+                        <li id="text-12" class="text">Sağlık turizm sertifikalı hekim ve uzmanlar</li>
+                        <li id="text-13" class="text">%100 steril ortam</li>
+                        <li id="text-14" class="text">Operasyon/işlem sonrası takipler (doktor/uzman danışmanlığı ile)</li>
+                        <li id="text-15" class="text">Kaliteli ve güvenilir hizmet anlayışı</li>
+                        <li id="text-16" class="text">İhtiyaca göre ek hizmetler</li>
+                    </ul>
+                </h6>
+                <button class="services-button text" role="button" onclick="window.location.href='services.html';" id="text-17">Hizmetlerimiz</button>
+            </div>
+        </main>
+        
+        <div class="contact-line">
+            <img src="./icons/hand-holding-heart-solid.svg" alt="" class="hand">
+            <p id="text-18" class="text">Sağlıklı hizmet almak sizin de hakkınız. Hizmet sonrası irtibatta kalıp süreci birlikte değerlendiriyoruz.</p>
+            <button class="contact-button text" role="button" onclick="window.location.href='mailto:ndacounselling@outlook.com';" id="text-19">Bize Ulaşın</button>
+        </div>
+
+        <section>
+            <div class="ndamed-img-wrapper">
+                <img src="./images-2/ndamed-img.jpg" alt="" class="ndamed-img">
+            </div>
+            <div class="ndamed-content">
+                <div>
+                    <h4 id="text-20" class="text">Biz Kimiz?</h4>
+                    <hr>
+                    <p id="text-21" class="text">2024 yılında Ankara'da kurulmuş küçük bir aile şirketiyiz. Ankara'nın bir çok açıdan
+                        sağlık turizmi sektörüne
+                        sunabilecek büyük katkısı olduğunu düşünüyoruz ve bu yolda ilerliyoruz. Sahip olduğumuz sosyal
+                        ağımızı yurtiçi ve
+                        yurtdışından bizi tercih eden misafirlerle buluşturmak istiyoruz. Doğru hastane, iyi otel ve
+                        başarılı transfer hizmeti sunuyoruz. Sadece bir sağlık turizm acentesi olarak değil,
+                        misafirlerimizin
+                        şehirde kendilerini rahat hissetmeleri için onlara aynı zamanda bir asistanlık hizmeti
+                        veriyoruz.Bizi diğer acentelerden farklı kılan şey, kendi sağlığımız söz konusu olduğunda iyi sağlık
+                        hizmeti almak istediğimiz
+                        zaman ne yapıyorsak, misafirlerimize de aynı şekilde davranıyoruz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="isqua-line">
+            <img src="./images-2/isqua-accredition.webp" alt="" class="isqua-img">
+            <p id="text-22" class="text">NDA Med International Society for Quality in Health Care (ISqua) üyesidir. ISqua'nın kısaca hedefleri ise eğitim, bilgi paylaşımı, denetim, dünya çapındaki sağlık sistemlerini desteklemek ve benzer düşünen insanları sağlık ağlarımız aracılığıyla buluşturmaktır.
+                NDA Med olarak ISqua'nın sunduğu hizmetler doğtultusunda ilerliyoruz ve tüm bilgilendirmelerini destekliyoruz. Ülkemizde sadece uluslararası sağlık turizm sertifikasına sahip olan hastane ve kliniklerle çalışıyoruz. Ayrıca, sunulan eğitimlere katılarak hem yurtiçinde hem 
+                yurtdışında bulunan ve bizi tercih tüm hastalar için en en güncel bilgiyi en doğru kaynaktan edinmiş oluyoruz.
+            </p>
+        </div>
+        
+        <summary>
+                <div class="service-summary">
+                    <h2 id="text-23" class="text"> Yolculuğunuz boyunca size eşlik edecek <hr class="hr-2"> kaliteli bir özel hizmet yelpazesi</h2>
+                </div>
+                    <div class="special-services">
+                        <div class="sum1">
+                            <div class="sum1-content">
+                                <img src="./icons/transportation.svg" alt="" class="transportation-img">
+                                <h4 id="text-24" class="text">Ulaşım</h4>
+                                <hr>
+                                <p id="text-25" class="text">Gitmeniz gereken yerlere ulaşmanıza yardımcı oluyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="sum2">
+                            <div class="sum2-content">
+                                <img src="./icons/hotel.svg" alt="" class="accomodation-img">
+                                <h4 id="text-26" class="text">Konaklama</h4>
+                                <hr>
+                                <p id="text-27" class="text">Anlaşmalı otellerimizde konaklama hizmeti sunuyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="sum3">
+                            <div class="sum3-content">
+                                <img src="./icons/language.svg" alt="" class="translations-img">
+                                <h4 id="text-28" class="text">Dil Desteği</h4>
+                                <hr>
+                                <p id="text-29" class="text">İngilizce dahil birçok dilde çeviri hizmeti sunuyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="sum4">
+                            <div class="sum4-content">
+                                <img src="./icons/communication.svg" alt="" class="communication-img">
+                                <h4 id="text-30" class="text">7/24 İletişim</h4>
+                                <hr>
+                                <p id="text-31" class="text">Saat farketmeksizin size şehrin her yerinde eşlik ediyoruz.</p>
+                            </div>
+                        </div>
+                        <div class="sum5">
+                            <div class="sum5-content">
+                                <img src="./icons/hospital-user-solid.svg" alt="" class="hospital-img">
+                                <h4 id="text-32" class="text">Destek</h4>
+                                <hr>
+                                <p id="text-33" class="text">Talebinize uygun bir hastane veya uzman tedariği sağlıyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+        </summary>
+
+        <footer>
+            <div class="contact-content">
+                <div class="contact-title-section">
+                    <img src="./icons-2/heart-pulse-solid.svg" class="contact-heartbeat">
+                    <h2 class="contact-title text" id="text-60">İletişim</h2>
+                </div>
+                <div class="footer-contact-area">
+                    <div class="address-section">
+                        <img src="./icons-2/location-dot-solid.svg" class="intro-image">
+                        <div class="address-text text" id="text-61">Kırkkonaklar Mahallesi, Şemsettin Günaltay <br> Caddesi 241/2, Çankaya/ANKARA (Türkiye)</div>
+                    </div>
+                    <div class="address-section mail-content">
+                        <img src="./icons-2/envelope-solid.svg" class="intro-image">
+                        <a href="mailto:support@doctorate.com" class="address-text footer-link">ndacounselling@outlook.com</a>
+                    </div>
+                    <div class="address-section-whatsapp-content">
+                        <img src="./icons-2/whatsapp-footer.svg" class="social-image">
+                        <div class="number-section">
+                            <div class="abroad-area">
+                                <p id="text-62" class="text">Yurtdışı :</p>
+                                <a href="https://wa.me/+905061122493" class="abroad-number">+90 506 112 24 93</a>
+                            </div>
+                            <div class="domestic-area">
+                                <p id="text-63" class="text">Yurtiçi :</p>
+                                <a href="https://wa.me/+905416007820" class="domestic-number">+90 541 600 78 20</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-social-media">
+                <div class="footer-social-media-section">
+                    <img src="./icons-2/heart-pulse-solid.svg" class="explore-heartbeat">
+                    <h2 class="footer-social-title text" id="text-64">Sosyal Medya</h2>
+                </div>
+                <div class="footer-social-media-text">
+                    <p id="text-65" class="text">Bize sosyal medya hesaplarımızdan <br> da ulaşabilirsiniz. </p>
+                </div>
+                <div class="footer-social-media-content">
+                    <div class="instagram-section">
+                        <img src="./icons-2/instagram-footer.svg" class="social-image">
+                        <a href="http://www.instagram.com/ndamedhealthandbeauty" class="social-media-instagram">ndamedhealthandbeauty</a>
+                    </div>
+                    <div class="facebook-section">
+                        <img src="./icons-2/facebook-footer.svg" class="social-image">
+                        <a href="https://www.facebook.com/profile.php?id=100011155658706&mibextid=LQQJ4d" class="social-media-facebook">NDA Med</a>
+    
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-map-container">
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=+Kirkkonaklar+Mahallesi,+450.+Cadde,+381.+sokak+no+7/4&amp;key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+            </div>  
+        </footer>
+
+        <div class="bottom-banner">
+            <button class="kvkk-link" onclick="toggleOverlay()">
+                <p>KVKK Aydınlatma Metni</p>
+            </button>
+        </div>
+        <div class="kvkk-popup">
+            <button class="kvkk-exit" onclick="toggleOverlay()">X</button>
+            <div class="kvkk-text">
+                <p>KVKK metni – NDA Med. <br>
+                    KİŞİSEL VERİLERİN KORUNMASI VE GİZLİLİK POLİTİKASI <br>
+                    Web Sitesi Gizlilik Sözleşmesi
+                </p>
+                <p>Bu web sitesini ziyaret etmeniz ve bu site vasıtasıyla sunduğumuz hizmetlerden yararlanmanız
+                    sırasında, size ve talep ettiğiniz hizmetlere ilişkin olarak elde ettiğimiz bilgilerin ne şekilde kullanılacağı
+                    ve korunacağı, işbu "Gizlilik Politikası"nda belirtilen şartlara tabidir. Bu web sitesini ziyaret etmekle ve
+                    bu site vasıtasıyla sunduğumuz hizmetlerden yararlanmayı talep etmekle işbu "Gizlilik Politikası"nda
+                    belirtilen şartları kabul etmektesiniz.
+                </p>
+                <h3>I. Kişisel verilerin korunması ve işlenmesi politikasının amacı</h3>
+                <p>Bugüne kadar NDA MED. olarak uğraştığımız işlerin hassasiyeti gereğince müşterilerimizden ya da
+                    müşteri adaylarımızdan gelen veriler gizli tutulmuş ve hiçbir zaman üçüncü kişilerle paylaşılmamıştır.
+                    Kişisel verilerin korunması, şirketimizin temel politikasıdır. Herhangi bir yasal düzenleme olmadan
+                    önce de şirket ve iştiraklerimiz, kişisel verilerin gizliliğine büyük önem vermiş ve bunu bir çalışma ilkesi
+                    olarak benimsemiş ve çalışanlarına da bu ilke doğrultusunda çalışma talimatlarını vermiştir. Kişisel
+                    Verilerin Korunması Kanunu’nun getirdiği bütün sorumluluklara uymayı da NDA MED. olarak taahhüt
+                    etmekteyiz. Şirketimizin kişisel verilerin korunmasına ilişkin prensipleri, iştiraklerimizi de
+                    kapsamaktadır.
+                </p>
+                <h3>II. Kişisel verilerin korunması ve işlenmesi politikasının kapsamı ve değiştirilmesi</h3>
+                <p>Şirketimiz tarafından hazırlanan bu Politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu’na (“KVKK”)
+                    uygun olarak hazırlanmıştır. Sizlerden rızanızla ya da Kanunda sayılan diğer hukuka uygunluk gereği
+                    elde edilmiş veriler, sunmuş olduğumuz hizmetlerin daha kaliteli hale getirilmesi, sizlere sunulan
+                    hizmetlerin ve kalite politikamızın iyileştirilmesi amacıyla kullanılacaktır. NDA MED. Kişisel Verilerin
+                    Korunması ve İşlenmesi Politikası, müşterilerimizin, müşteri adaylarımızın, çalışanlarımız ile bizimle
+                    çözüm ortaklığı içinde çalışan şirketlerin müşterileri ve çalışanlarının ya da diğer kişilerin otomatik
+                    olarak elde edilen verilerinin korunmasını amaçlar ve bunlara ilişkin düzenlemeleri içerir.
+                    Şirketimiz, politikamızı ve Yönetmeliğimizi -Kanuna uygun olmak ve kişisel verilerin daha iyi korunması
+                    şartı ile- değiştirme hakkına sahiptir.
+                </p>
+                <h3>III. Kişisel verilerin işlenmesi ile ilgili temel kurallar</h3>
+                <p>a) Hukuka ve dürüstlük kurallarına uygun olma: NDA MED., topladığı ya da kendisine diğer
+                    şirketlerden gelen verilerin kaynağını sorgular ve bunların hukuka uygun ve dürüstlük kuralları
+                    çerçevesinde elde edilmesine önem verir. Bu çerçevede NDA MED.’in sunduğu hizmetleri satan
+                    üçüncü taraflara (acentelerin ve diğer aracı kurumların da) kişisel verilere korunması amacıyla gerekli
+                    uyarı ve bildirimleri yapar.
+                </p>
+                <p>b) Doğru ve gerektiğinde güncel olma: NDA MED., firma bünyesinde bulunan bütün verilerin doğru
+                    bilgi olmasına, yanlış bilgi içermemesine ve nihayet kişisel verilerde değişiklik olduğu takdirde bunları
+                    kendisine iletildiği takdirde güncellemeye önem verir.
+                </p>
+                <p>c) Belirli, açık ve meşru amaçlar için işlenme: NDA MED., ancak sunduğu ve hizmet sırasında kişilerden
+                    onayını aldığı amaçlarla sınırlı şekilde verileri işler. İş amacı dışında verileri işlemez, kullanmaz ve
+                    kullandırtmaz.
+                </p>
+                <p>d) İşlendikleri amaçla bağlantılı, sınırlı ve ölçülü olma: NDA MED., sadece verileri işlendikleri amaçla
+                    sınırlı ve hizmetin gerektirdiği ölçüde kullanır.
+                </p>
+                <p>e) İlgili mevzuatta öngörülen veya işlendikleri amaç için gerekli olan süre kadar muhafaza edilme: NDA
+                    MED., sözleşmeler kaynaklı verileri Kanunun ihtilaf çıkma süreleri, ticaret ve vergi hukukunun
+                    gereklilikleri kadar bünyesinde muhafaza eder. Buna karşın bu amaçlar ortadan kalktığında veriyi siler
+                    ya da anonimleştirir.
+                </p>
+                <p>Önemle belirtelim ki, NDA MED., verileri ister rıza isterse kanuna uygun bir şekilde toplamış ya da
+                    işlemiş olsun yine de yukarıda sıraladığımız bu ilkeler geçerlidir.
+                </p>
+                <p>Kişisel Verileri Koruma Kanunu madde 11’e göre aşağıda sayılan haklarınız bulunmaktadır. Bu
+                    haklarınızı kolaylaştırmak için sizler için ayrıca bir başvuru formu da NDA MED. tarafından
+                    hazırlanmıştır.
+                </p>
+                <p>Kişisel verileri işlenen kişiler, NDA MED. tarafından web sayfamızda duyurulan ilgilimize başvurarak
+                    kendi verisi ile ilgili olarak;
+                </p>
+                <p>a) Kişisel verinizin işlenip işlenmediğini öğrenme,</p>
+                <p>b) Kişisel verileri işlenmişse buna ilişkin bilgi talep etme,</p>
+                <p>c) Kişisel verilerin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</p>
+                <p>ç) Yurt içinde veya yurt dışında kişisel verilerin aktarıldığı üçüncü kişileri bilme,</p>
+                <p>d) Kişisel verilerin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme,</p>
+                <p>d) ve e) bentleri uyarınca yapılan işlemlerin, kişisel verilerin aktarıldığı üçüncü kişilere</p>
+                <p>e) Kanunda öngörülen şartlar çerçevesinde kişisel verilerin silinmesini veya yok edilmesini isteme,</p>
+                    bildirilmesini isteme,
+                <p>g) İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle kişinin kendisi</p>
+                    aleyhine bir sonucun ortaya çıkmasına itiraz etme,
+                <p>ğ) Kişisel verilerin kanuna aykırı olarak işlenmesi sebebiyle zarara uğraması hâlinde zararın
+                    giderilmesini talep etme,</p>
+                <p>haklarına sahiptir. NDA MED. olarak bu haklara saygılıyız.</p>
+                <h4>Azami Tasarruf İlkesi</h4>
+                <p>Azami tasarruf ilkesi ya da cimrilik ilkesi adı verilen bu ilkemize göre NDA MED.’ye ulaşan veriler, ancak
+                    gerekli olduğu kadar sisteme işlenir. Bu nedenle hangi verileri toplayacağımız amaca göre belirlenir.
+                    Gerekli olmayan veriler toplanmaz. Şirketimize intikal eden diğer veriler de aynı şekilde şirket bilişim
+                    sistemlerine aktarılır. Fazlalık bilgiler, sisteme kaydedilmez, silinir ya da anonim hale getirilir. Bu veriler,
+                    istatistiki amaçlarla kullanılabilir. Özel nitelikli verilerden sağlık verileri sadece müşterilere daha iyi
+                    hizmet vermek ve onların sağlığını korumak amacıyla alınır, yine aynı amaçla sınırlı olmak üzere
+                    müşterinin tercih ettiği hizmetin türüne göre yurt içi veya yurt dışında mukim otel, hava yolu ve
+                    transfer hizmeti sağlayan tedarikçi firmalar ile ilgili yurt dışı acentesine aktarılır ve sistemde özenle
+                    tutulur.
+                </p>
+                <h4>Kişisel verilerin silinmesi</h4>
+                <p>Kanunen saklanması gereken sürelerin dolması, yargı süreçlerinin tamamlanması ya da diğer
+                    gereklilikler ortadan kalktığında şirketimiz tarafından bu veriler kendiliğinden ya da ilgili kişinin talebi
+                    üzerine kişisel veriler silinir, yok edilir ya da anonim hale getirilir.
+                </p>
+                <h4>Doğruluk ve veri güncelliği</h4>
+                <p>NDA MED. bünyesinde bulunan veriler, kural olarak ilgili kişilerin beyanı üzerine beyan ettiği şekilde
+                    işlenir. NDA MED., müşteriler ya da NDA MED. ile temas kuran kişilerin beyan ettiği verilerin
+                    doğruluğunu araştırmak zorunda olmadığı gibi bu hukuken ve çalışma ilkelerimiz nedeniyle de
+                    yapılmaz. Beyan edilen veriler, doğru kabul edilir. Kişisel verilerin doğruluğu ve güncelliği ilkesi NDA
+                    MED. tarafından da benimsenmiştir. Şirketimizin kendisine ulaşan resmî belgelerden veya ilgilisinin
+                    talebi üzerine işlemiş olduğu kişisel verileri günceller. Bunun için gerekli önlemleri alır.
+                </p>
+                <h4>Gizlilik ve veri güvenliği</h4>
+                <p>Kişisel veriler gizlidir ve NDA MED. de bu gizliliğe riayet etmektedir. Kişisel verilere şirket içinde ancak
+                    yetki verilmiş kişiler ulaşabilir. NDA MED. tarafından toplanan kişisel verilerin korunması ve yetkisiz
+                    kişilerin eline geçmemesi ve müşterilerimizin ve müşteri adaylarımızın mağdur olmaması için gerekli
+                    teknik ve idari bütün tedbirler alınmaktadır. Bu çerçevede yazılımların standartlara uygun olması,
+                    üçüncü partilerin özenle seçilmesi ve şirket içinde de veri koruma politikasına riayet edilmesi
+                    sağlanmaktadır.
+                </p>
+                <h3>IV. Veri işleme amaçları</h3>
+                <p>NDA MED.’in kişisel verileri toplanması ve işlenmesi aydınlatma metninde belirtilen amaçlar
+                    doğrultusunda icra edilecektir. Veriler, sözleşmenin kurulması ve müşterilere daha iyi hizmet
+                    sağlanması amacıyla toplanmakta ve işlenmektedir.
+                </p>
+                <h3>V. Müşteri, muhtemel müşteri ve iş ve çözüm ortakları verisi</h3>
+                <h4 style="font-style: italic;">Sözleşme ilişkisi için verinin toplanması ve işlenmesi</h4>
+                <p>Müşterilerimiz ve muhtemel müşterilerimizle bir sözleşme ilişkisi kurulmuş ise, toplanmış olan kişisel
+                    veriler, müşterinin onayı alınmaksızın kullanılabilir. Ancak bu kullanım, sözleşme amacı doğrultusunda
+                    gerçekleşir. Sözleşmenin daha iyi icrası ve hizmetin gereklilikleri ölçüsünde veriler kullanılır ve
+                    gerektiğinde müşterilerle irtibata geçilerek güncellenir. Buna karşın müşteri adaylarımızın (muhtemel
+                    müşteri) bize kendileri tarafından bırakmış olduğu veriler, onlara sonrasında daha kolay ve kaliteli
+                    hizmet sunmak için işlenir. Bu veriler talepleri halinde bir sözleşme ilişkisine dönüşmemişse silinir.
+                </p>
+                <h4 style="font-style: italic;">İş ve Çözüm Ortakları Verileri</h4>
+                <p>NDA MED., gerek iş gerekse çözüm ortakları ile veri paylaşımı yaparken hukuka uygun davranmayı ilke
+                    edinir. İş ve çözüm ortakları ile veri gizliliği taahhüdü ile ve ancak hizmetin gerektirdiği kadar veri
+                    paylaşılmakta ve bu taraflardan mutlaka veri güvenliğinin alınmasına ilişkin tedbirleri almaya
+                    zorlanmaktadır.
+                </p>
+                <h4 style="font-style: italic;">Şirketin hukuki yükümlülüğü veya kanunda açıkça öngörülmesi sebebiyle yapılan veri işlemleri</h4>
+                <p>Kişisel veriler, işlemenin ilgili mevzuatta açıkça belirtilmesi veya mevzuatla belirlenen bir hukuki
+                    yükümlülüğün yerine getirilmesi amacıyla ayrıca onay alınmadan işlenebilir. Veri işlemlerinin tür ve kapsamı, 
+                    yasal olarak izin verilen veri işleme faaliyeti için gerekli olmalı ve ilgili yasal hükümlere uygun
+                    olmalıdır.
+                </p>
+                <h4 style="font-style: italic;">Şirketin veri işlemesi</h4>
+                <p>Şirketin sunduğu hizmet ve meşru amaçları doğrultusunda kişisel veriler işlenebilir. Ancak veriler
+                    hiçbir şekilde hukuka aykırı hizmetler için kullanılamaz.
+                </p>
+                <h4 style="font-style: italic;">Özel nitelikli verilerin işlenmesi</h4>
+                <p>Kanun’a göre Kişilerin ırkı, etnik kökeni, siyasi düşüncesi, felsefi inancı, dini, mezhebi veya diğer
+                    inançları, kılık ve kıyafeti, dernek, vakıf ya da sendika üyeliği, sağlığı, cinsel hayatı, ceza mahkûmiyeti
+                    ve güvenlik tedbirleriyle ilgili verileri ile biyometrik ve genetik verileri özel nitelikli kişisel veridir. NDA
+                    MED. ayrıca, özel nitelikli kişisel verilerin işlenmesinde, ayrıca Kurul tarafından belirlenen yeterli
+                    önlemleri alır.
+                </p>
+                <p>NDA MED., hizmetlerin daha iyi verilebilmesi için kişilerin onayı ile özel nitelikli verileri ancak
+                    toplandıkları amaç için işleyebilir. Aracılığımızla rezervasyon yaptırdığınız tesis, Covid-19 kapsamında
+                    çıkan genelge ve yasal düzenlemeler gereği misafirlerden, kendilerine ve yakınlarına ait sağlık verileri
+                    gibi özel nitelikli kişisel veriler de dahil olmak üzere bazı kişisel veriler talep edebilir. Bu kişisel veriler,
+                    gerektiğinde resmi merciler ve sağlık kuruluşları ile paylaşılabilir.
+                </p>
+                <h4 style="font-style: italic;">Otomatik sistemlerle işlenen veriler</h4>
+                <p>Otomatik sistemler aracılığı ile işlenen veriler konusunda NDA MED., Kanuna uygun davranır. Kişilerin
+                    açık rızası olmaksızın bu verilerden elde edilen bilgiler kişi aleyhine kullanılamaz. Ancak NDA MED.,
+                    kendi sistemindeki verileri kullanarak işlem yapacağı kişilerle ilgili kararlar alabilir.
+                </p>
+            </div>
+            <button class="kvkk-scroll-top" onclick="scrollToTop()">↑</button>
+        </div>
+    </body>
+
+</html>
