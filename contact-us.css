@@ -97,7 +97,7 @@ header {
 
 .logo img {
     align-self: center;
-    max-height: 5rem;
+    max-height: 8rem;
 }
 
 .menu-container {
@@ -148,21 +148,21 @@ header {
     flex: 1;
     display: flex;
     justify-content: center;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
+    border-top-right-radius: 2.5em;
+    border-top-left-radius: 2.5em;
     width: auto;
 }
 
 .navbar a {
     text-decoration: none;
     color:#393e46;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: transparent;
     text-align: center;
     display: flex;
     text-wrap: nowrap;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 300;
 }
 
@@ -294,8 +294,13 @@ header {
         display: flex;
     }
 
+    .logo img {
+        max-height: 6rem;
+    }
+
     .logo {
-        padding-top: 5%;
+        padding-top: 7%;
+        padding-left: 0;
     }
 
 }
@@ -392,11 +397,14 @@ header {
         font-size: large;
     }
 
-    .logo {
-        padding-top: 4%;
-    
+    .logo img {
+        max-height: 6rem;
     }
 
+    .logo {
+        padding-top: 4%;
+        padding-left: 0;
+    }
 
 }
 
@@ -492,6 +500,25 @@ header {
     }
 
 }
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+
+    header {
+        height: 20%;
+    }
+
+    .logo img {
+        max-height: 6rem;
+    }
+
+    .navbar a {
+        font-size: 17px;
+    }
+
+    .language-selector select {
+        margin-bottom: 12%;
+    }
+}
     
 
 /*#endregion MOBILE HEADER */
@@ -528,20 +555,27 @@ header {
 }
 
 .contact-person img {
-    width: 10rem;
+    width: 15rem;
     border-radius: 50%;
 }
 
 .contact-person h4 {
     margin: 2rem;
-    font: 400 2em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
+    font: 400 3em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
     color: var(--blue);
+}
+
+.contact-person hr {
+    width: 30%;
+    margin-bottom: 3rem;
+    border: 0.5px solid var(--blue);
+
 }
 
 .contact-person p {
     margin: 3rem;
     margin-top: 0;
-    font: 300 1.3em/2 "Open Sans", "Helvetica Neue", sans-serif;
+    font: 300 1.5em/2 "Open Sans", "Helvetica Neue", sans-serif;
     color: var(--dkblue);
 }
 
@@ -555,7 +589,7 @@ header {
 
 .contact-area h1 {
     margin: 1rem;
-    font: 400 2em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
+    font: 400 2.5em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
     color: var(--white);
 }
 
@@ -567,7 +601,7 @@ header {
 
 .contact-area p {
     margin: 1rem;
-    font: 300 1.3em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
+    font: 300 1.5em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
     color: var(--white);
 }
 
@@ -589,7 +623,7 @@ header {
 .contact-list a {
     color: var(--white);
     text-decoration: none;
-    font: 300 1.3em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
+    font: 300 1.5em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .contact-list a:hover {
@@ -624,6 +658,7 @@ header {
     flex-direction: row;
     margin-top: 1%;
     margin-bottom: 6%;
+    font-size: 1.2em;
 }
 
 .contact-email img {
@@ -648,6 +683,7 @@ header {
     flex-direction: row;
     margin-top: 1%;
     margin-bottom: 1%;
+    font-size: 1em;
 }
 
 .contact-whatsapp img {
@@ -670,6 +706,7 @@ header {
     flex-direction: row;
     margin-top: 5%;
     margin-bottom: 3%;
+    font-size: 1.3em;
 }
 
 .contact-instagram img {
@@ -694,6 +731,7 @@ header {
     flex-direction: row;
     margin-top: 5%;
     margin-bottom: 3%;
+    font-size: 1.3em;
 }
 
 .contact-facebook img {
@@ -733,12 +771,22 @@ header {
       width: 100%;
     }
 
+    .contact-person img {
+        width: 8rem; /* Adjust as needed */
+        margin-top: 10%;
+    }
+
+    .contact-person hr {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
     .contact-person h4 {
         margin-bottom: 0;
     }
 
     .contact-person p {
-        margin: 3rem;
+        margin: 1.5rem;
     }
 
     .contact-area {
@@ -765,11 +813,6 @@ header {
     .contact-facebook img {
         margin-left: 0;
     }
-    
-    .contact-person img {
-      width: 8rem; /* Adjust as needed */
-      margin-top: 5%;
-    }
 
     .contact-address p {
         font-size: 1em;
@@ -786,10 +829,10 @@ header {
     .number-section a {
         padding: 0;
     }
-  }
+}
   
   /* Medium screens (tablets) */
-  @media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 834px) {
 
     .main {
         padding-top: 5%;
@@ -805,17 +848,17 @@ header {
     }
 
     .contact-person img {
-        width: 8rem; /* Adjust as needed */
+        width: 10rem; /* Adjust as needed */
         margin-top: 5%;
     }
 
     .contact-area {
         width: 90%;
     }
-  }
+}
   
   /* Large screens (desktops) */
-  @media only screen and (min-width: 835px) and (max-width: 1024px) {
+@media only screen and (min-width: 835px) and (max-width: 1200px) {
     .contact-box {
       flex-direction: row;
       height: 50%;
@@ -833,13 +876,47 @@ header {
     .contact-area {
         width: 50%;
     }
-  }
-  
+}
 
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+
+    .contact-person img {
+        width: 11rem; /* Adjust as needed */
+    }
+
+    .contact-person h4 {
+        font-size: 2em;
+    }
+
+    .contact-person p {
+        font-size: 1.3em;
+    }
+
+    .contact-area p {
+        font-size: 1.3em;
+    }
+
+    .contact-email a {
+        font-size: 1.1em;
+    }
+
+    .number-section a {
+        font-size: 1.2em;
+    }
+
+    .contact-instagram a {
+        font-size: 1em;
+    }
+
+    .contact-facebook a {
+        font-size: 1em;
+    }
+}
+  
 /*#region FOOTER */
 
 footer {
-    height: 50%;
+    height: 40%;
     background-color: var(--dkblue);
     display: flex;
     align-items: center;
@@ -1256,7 +1333,7 @@ footer iframe {
     right: 0;
     flex-direction: column;
     position: fixed;
-    background-color: var(--white);
+    background-color: #E1F2FB;
     padding-left: 10em;
     padding-right: 10em;
     padding-bottom: 10em;

@@ -177,6 +177,33 @@ async function setLanguage() {
 
     const languageBasedDictionary = dictionary.texts.map(({ id, [currentLanguage]: langText }) => ({ id, text: langText }));
 
+    let img = document.getElementById("img1");
+    let img2 = document.getElementById("img2");
+    let img3 = document.getElementById("img3");
+
+    if (currentLanguage === "de" || currentLanguage === "nl") {
+        if (img) {
+            img.classList.add("img1-alternative");
+        }
+        if (img2) {
+            img2.classList.add("img2-alternative");
+        }
+        if (img3) {
+            img3.classList.add("img3-alternative");
+        }
+    }
+    else {
+        if (img) {
+            img.classList.remove("img1-alternative");
+        }
+        if (img2) {
+            img2.classList.remove("img2-alternative");
+        }
+        if (img3) {
+            img3.classList.remove("img3-alternative");
+        }
+    }
+
     languageBasedDictionary.forEach(element => {
         let htmlElement = document.getElementById(element.id)
         if (htmlElement) {
