@@ -333,7 +333,7 @@ header {
 
     .on {
         width: 40%;
-        background-color: rgba(241, 241, 241, 0.5);
+        background-color: rgba(241, 241, 241, 0.9);
     }
 
     .off {
@@ -410,6 +410,10 @@ header {
 
 @media only screen and (min-width: 835px) and (max-width: 1200px) {
 
+    .header {
+        height: 30%;
+    }
+
     .contact-banner {
         display: none;
     }
@@ -432,7 +436,7 @@ header {
 
     .on {
         width: 40%;
-        background-color: rgba(241, 241, 241, 0.5);
+        background-color: rgba(241, 241, 241, 0.9);
     }
 
     .off {
@@ -476,7 +480,7 @@ header {
 
     .btn {
         padding-bottom: 7.4%;
-    };
+    }
 
     .mobile-navbar {
         opacity: 0.6;
@@ -518,6 +522,66 @@ header {
     .language-selector select {
         margin-bottom: 12%;
     }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+
+    .logo  {
+        padding-top: 3%;
+    }
+
+    .logo img {
+        max-height: 7rem;
+    }
+
+    .on {
+        background-color: rgba(241, 241, 241, 0.9);
+    }
+}
+
+@media only screen and (width: 1180px) and (height: 820px) and (orientation:landscape) {
+
+    header {
+        height: 18%;
+    }
+
+    .logo {
+        padding-top: 3%;
+    }
+    
+    .on {
+        background-color: rgba(241, 241, 241, 0.9);
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    
+    header {
+        height: 12%;
+    }
+
+    .logo img {
+        max-height: 8rem;
+    }
+    
+    .on {
+        background-color: rgba(241, 241, 241, 0.9);
+    }
+    
+}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+    
+    .logo img {
+        max-height: 8rem;
+    }
+    
+    .language-selector select {
+        margin-bottom: 0%;
+        margin-top: 10%;
+    }
+    
 }
     
 
@@ -912,6 +976,18 @@ header {
         font-size: 1em;
     }
 }
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    
+    .main {
+        margin-top: 20%;
+    }
+
+    .contact-list a {
+        font: 300 1.4em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
+    }
+}
   
 /*#region FOOTER */
 
@@ -1238,7 +1314,6 @@ footer iframe {
 @media only screen and (min-width: 600px) and (max-width: 834px) {
 
     footer {
-        height: auto;
         padding: 10px;
     }
     
@@ -1278,6 +1353,21 @@ footer iframe {
         height: 100%;
     }
         
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+
+    .social-image {
+        height: 3rem;
+    }
+
+    .abroad-number {
+        padding-left: 0;
+    }
+
+    .domestic-number {
+        padding-left: 0;
+    }
 }
 
 /*# MOBILE FOOTER END */

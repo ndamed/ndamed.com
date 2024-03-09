@@ -201,7 +201,6 @@ header {
     align-self: center;
 }
 
-
 /*#region Mobile Header */
 
 @media only screen and (max-width: 600px) {
@@ -338,9 +337,8 @@ header {
 
     .on {
         height: 100vh;
-        ;
         width: 40%;
-        background-color: rgba(241, 241, 241, 0.5);
+        background-color: rgba(241, 241, 241, 0.9);
     }
 
     .off {
@@ -419,10 +417,6 @@ header {
 
 @media only screen and (min-width: 835px) and (max-width: 1200px) {
 
-    header {
-        height: auto;
-    }
-
     .contact-banner {
         display: none;
     }
@@ -446,7 +440,7 @@ header {
     .on {
         height: 100vh;
         width: 40%;
-        background-color: rgba(241, 241, 241, 0.5);
+        background-color: rgba(241, 241, 241, 0.9);
     }
 
     .off {
@@ -493,8 +487,6 @@ header {
         padding-bottom: 7.4%;
     }
 
-    ;
-
     .mobile-navbar {
         opacity: 0.6;
         transition: opacity 0.6s ease 0s;
@@ -536,6 +528,66 @@ header {
     .language-selector select {
         margin-bottom: 12%;
     }
+}
+
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+
+    .logo  {
+        padding-top: 3%;
+    }
+
+    .logo img {
+        max-height: 7rem;
+    }
+
+    .on {
+        background-color: rgba(241, 241, 241, 0.9);
+    }
+}
+
+@media only screen and (width: 1180px) and (height: 820px) and (orientation:landscape) {
+
+
+    .logo {
+        padding-top: 3%;
+    }
+    
+    .on {
+        background-color: rgba(241, 241, 241, 0.9);
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    
+    header {
+        height: 12%;
+    }
+
+    .logo {
+        padding-top: 4%;
+    }
+
+    .logo img {
+        max-height: 8rem;
+    }
+    
+    .on {
+        background-color: rgba(241, 241, 241, 0.9);
+    }
+    
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
+    
+    .logo img {
+        max-height: 8rem;
+    }
+    
+    .language-selector select {
+        margin-bottom: 0%;
+        margin-top: 10%;
+    }
+    
 }
 
 
@@ -721,7 +773,7 @@ header {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .prev:hover {
@@ -743,7 +795,7 @@ header {
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .next:hover {
@@ -1366,25 +1418,25 @@ tbody tr:last-child td {
 
 @media only screen and (min-width: 600px) and (max-width: 834px) {
 
-        .our-med-services {
+    .our-med-services {
             padding: 15% 5% 5% 5%;
-        }
+    }
 
-        .service {
+    .service {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
-        }
+    }
 
-        .service img {
+    .service img {
             width: 25%;
             height: 25%;
             background-color: #5b9ad5;
             border-radius: 50%;
             border: #41506b 0.5px solid;
-        }
+    }
 
-        #exit-preview {
+    #exit-preview {
             position: fixed;
             z-index: 501;
             top: 1%;
@@ -1397,9 +1449,9 @@ tbody tr:last-child td {
             opacity: 1;
             border: none;
             font-size: 35px;
-        }
+    }
 
-        .prev-zoom {
+    .prev-zoom {
             height: 9vh;
             width: 9vh;
             border-radius: 50%;
@@ -1408,9 +1460,9 @@ tbody tr:last-child td {
             border: none;
             font-size: 45px;
             color: var(--white);
-        }
+    }
 
-        .next-zoom {
+    .next-zoom {
             height: 9vh;
             width: 9vh;
             border-radius: 50%;
@@ -1419,59 +1471,59 @@ tbody tr:last-child td {
             border: none;
             font-size: 45px;
             color: var(--white);
-        }
+    }
 
-        td img {
+    td img {
             width: 50px;
             height: 50px;
-        }
+    }
 
-        .treatment-plan p {
+    .treatment-plan p {
             padding-left: 15%;
             padding-right: 15%;
             word-spacing: 1px;
             line-height: 1.5;
-        }
+    }
 
-        .contact-line {
+    .contact-line {
             position: relative;
             top: 5%;
             height: 12%;
             padding: 0;
-        }
+    }
 
-        .contact-line p {
+    .contact-line p {
             font-size: 20px;
-        }
+    }
 
-        .contact-button {
+    .contact-button {
             width: 15%;
             margin-right: 2%;
-        }
+    }
 
-        .hand {
+    .hand {
             width: 10%;
             height: 60%;
             margin-left: 2%;
             padding-right: 2%;
-        }
+    }
 
-        .prev {
-            display: none;
-        }
+    .prev {
+        width: 6%;
+    }
 
-        .next {
-            display: none;
-        }
+    .next {
+        width: 6%;
+    }
 }
 
 @media only screen and (min-width: 835px) and (max-width: 1200px) {
 
-        .our-med-services {
+    .our-med-services {
             padding-top: 10%;
-        }
+    }
 
-        #exit-preview {
+    #exit-preview {
             position: fixed;
             z-index: 501;
             top: 1%;
@@ -1484,9 +1536,9 @@ tbody tr:last-child td {
             opacity: 1;
             border: none;
             font-size: 35px;
-        }
+    }
 
-        .prev-zoom {
+    .prev-zoom {
             height: 12vh;
             width: 12vh;
             border-radius: 50%;
@@ -1495,9 +1547,9 @@ tbody tr:last-child td {
             border: none;
             font-size: 45px;
             color: var(--white);
-        }
+    }
 
-        .next-zoom {
+    .next-zoom {
             height: 12vh;
             width: 12vh;
             border-radius: 50%;
@@ -1506,58 +1558,58 @@ tbody tr:last-child td {
             border: none;
             font-size: 45px;
             color: var(--white);
-        }
+    }
 
-        .treatment-plan-cards {
+    .treatment-plan-cards {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
             padding: 5% 2% 5% 0%;
-        }
+    }
 
-        .step {
+    .step {
             width: 30%;
             height: 40%;
             margin-left: 5%;
-        }
+    }
 
-        .step img {
+    .step img {
             width: 20%;
             height: 20%;
-        }
+    }
 
-        .treatment-plan p {
+    .treatment-plan p {
             padding-left: 5%;
             padding-right: 5%;
             word-wrap: break-word;
             word-spacing: 2px;
             line-height: 1.5;
-        }
+    }
 
-        .contact-line {
+    .contact-line {
             position: relative;
             top: 5%;
             height: 12%;
             padding: 0;
-        }
+    }
 
-        .hand {
+    .hand {
             width: 10%;
             height: 50%;
             margin-left: 3%;
-        }
+    }
 
-        .contact-button {
+    .contact-button {
             margin-right: 3%;
-        }
+    }
 
-        .prev {
-            display: none;
-        }
+    .prev {
+        width: 8%;
+    }
 
-        .next {
-            display: none;
-        }
+    .next {
+        width: 8%;
+    }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -1581,6 +1633,26 @@ tbody tr:last-child td {
     .suitcase-img {
         margin-top: 9%;
     }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+
+    .prev {
+        width: 8%;
+    }
+
+    .next {
+        width: 8%;
+    }
+}
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    
+    .our-med-services {
+        padding-top: 15%;
+    }
+    
 }
 
 /*#endregion MOBILE CONTENT*/
@@ -1923,8 +1995,7 @@ footer iframe {
 @media only screen and (min-width: 600px) and (max-width: 834px) {
 
     footer {
-        height: auto;
-        padding: 20px;
+        padding: 10px;
     }
 
     .contacts {
@@ -1971,6 +2042,25 @@ footer iframe {
     
     footer {
         height: 50%;
+    }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    
+    .footer {
+        padding: 10px;
+    }
+
+    .social-image {
+        height: 3rem;
+    }
+
+    .abroad-number {
+        padding-left: 0;
+    }
+
+    .domestic-number {
+        padding-left: 0;
     }
 }
 
