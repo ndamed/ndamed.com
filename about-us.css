@@ -604,6 +604,22 @@ header {
     
 }
 
+@media only screen and (min-device-width: 1640px) and (max-device-width: 2360px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+
+    header {
+        height: 10%;
+    }
+
+    .logo img {
+        max-height: 10rem;
+    }
+
+    .language-selector select {
+        margin-bottom: 0%;
+        margin-top: 10%;
+    }
+}
+
 /*#endregion MOBILE HEADER */
 
 /*#endregion HEADER */
@@ -1303,6 +1319,35 @@ li {
         height: 20%;
     }
 }
+
+@media only screen and (min-device-width: 1640px) and (max-device-width: 2360px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+
+    .about-part {
+        padding-top: 3%;
+    }
+
+    .contact-line {
+        position: relative;
+        top: 1%;
+        height: 12%;
+    }
+
+    .ndamed-contact-img {
+        width: 20%;
+        height: 65%;
+    
+    }
+
+    .about-part2 {
+        padding-bottom: 2%;
+    }
+
+    .about-ankara-pics {
+        padding-top: 20%;
+    }
+}
+
+
 /*#endregion ABOUT US MOBILE */
 
 /*#region FOOTER */
@@ -1687,6 +1732,14 @@ footer iframe {
     .domestic-number {
         padding-left: 0;
     }
+}
+
+@media only screen and (min-device-width: 1640px) and (max-device-width: 2360px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
+    
+        footer {
+            height: 20%;
+        }
+    
 }
 
 /*#endregion MOBILE FOOTER*/
