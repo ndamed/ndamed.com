@@ -203,7 +203,7 @@ header {
 
 /*#region Mobile Header */
 
-@media only screen and (max-width: 600px) {
+@media  screen and (max-width: 640px) {
 
     header {
         height: 15%;
@@ -232,13 +232,11 @@ header {
     }
 
     .on {
-        height: 100vh;
         width: 50%;
         background-color: rgba(241, 241, 241, 0.9);
     }
 
     .off {
-        height: 100%;
         width: 10%;
         background-color: transparent;
     }
@@ -299,7 +297,7 @@ header {
     }
 
     .logo img {
-        max-height: 6rem;
+        max-height: 5.5rem;
     }
 
     .logo {
@@ -309,7 +307,7 @@ header {
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media  screen and (min-width: 640px) and (max-width: 825px) {
 
     header {
         height: 10%;
@@ -336,13 +334,11 @@ header {
     }
 
     .on {
-        height: 100vh;
         width: 40%;
         background-color: rgba(241, 241, 241, 0.9);
     }
 
     .off {
-        height: 100%;
         width: 10%;
         background-color: transparent;
     }
@@ -413,9 +409,14 @@ header {
         padding-left: 0;
     }
 
+
 }
 
-@media only screen and (min-width: 835px) and (max-width: 1200px) {
+@media  screen and (min-width: 825px) and (max-width: 1024px) {
+    
+    header {
+        height: 10%;
+    }
 
     .contact-banner {
         display: none;
@@ -427,9 +428,9 @@ header {
 
     .menu-container-mobile {
         height: 100vh;
-        top: 40%;
-        width: 5%;
+        width: 15%;
         position: absolute;
+        top: 40%;
         right: -5%;
         display: flex;
         flex-direction: column;
@@ -438,13 +439,11 @@ header {
     }
 
     .on {
-        height: 100vh;
         width: 40%;
         background-color: rgba(241, 241, 241, 0.9);
     }
 
     .off {
-        height: 10%;
         width: 10%;
         background-color: transparent;
     }
@@ -452,7 +451,7 @@ header {
     #hamburger-button:checked+label>img {
         transform: rotate(-90deg);
     }
-
+    
     .menu-container-mobile ul {
         height: 30%;
         list-style: none;
@@ -460,43 +459,44 @@ header {
         padding: 0;
         display: flex;
         flex-direction: column;
+    
     }
-
+    
     .menu-container-mobile li {
-        height: 40%;
+        height: 100%;
         width: 95%;
         align-items: center;
         align-content: center;
         display: flex;
         padding-left: 5%;
     }
-
+    
     .language-selector-mobile {
         padding-top: 10%;
         padding-left: 5%;
         width: 50%;
         height: 5%;
     }
-
+    
     .language-selector-mobile select {
         width: 100%;
         height: 100%;
     }
-
+    
     .btn {
-        padding-bottom: 7.4%;
+        padding-bottom: 11%;
     }
-
+    
     .mobile-navbar {
         opacity: 0.6;
         transition: opacity 0.6s ease 0s;
         opacity: 0;
     }
-
+    
     .mobile-navbar .active {
         color: #fff;
     }
-
+    
     .mobile-navbar a {
         color: #393e46;
         text-decoration: none;
@@ -504,92 +504,236 @@ header {
         display: flex;
         font-size: large;
     }
-
-    .logo {
-        padding-top: 0.5%;
+    
+    .logo img {
+        max-height: 8rem;
     }
-
+    
+    .logo {
+        padding-top: 3%;
+        padding-left: 2%;
+    }
+    
+    
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media  screen and (min-width: 1024px) and (max-width: 1200px) {
 
     header {
-        height: 20%;
+        height: auto;
     }
 
+    .contact-banner {
+        display: none;
+    }
+
+    .menu-container {
+        display: none;
+    }
+
+    .menu-container-mobile {
+        height: 100vh;
+        width: 15%;
+        position: absolute;
+        top: 40%;
+        right: -5%;
+        display: flex;
+        flex-direction: column;
+        transition-duration: 0.6s;
+        transition: width 1.5s;
+    }
+
+    .on {
+        width: 40%;
+        background-color: rgba(241, 241, 241, 0.9);
+    }
+
+    .off {
+        width: 10%;
+        background-color: transparent;
+    }
+
+    #hamburger-button:checked+label>img {
+        transform: rotate(-90deg);
+    }
+    
+    .menu-container-mobile ul {
+        height: 30%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .menu-container-mobile li {
+        height: 100%;
+        width: 95%;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        padding-left: 5%;
+    }
+    
+    .language-selector-mobile {
+        padding-top: 5%;
+        padding-left: 5%;
+        width: 50%;
+        height: 5%;
+    }
+    
+    .language-selector-mobile select {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .btn {
+        padding-bottom: 11%;
+    }
+    
+    .mobile-navbar {
+        opacity: 0.6;
+        transition: opacity 0.6s ease 0s;
+        opacity: 0;
+    }
+    
+    .mobile-navbar .active {
+        color: #fff;
+    }
+    
+    .mobile-navbar a {
+        color: #393e46;
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        font-size: large;
+    }
+    
     .logo img {
-        max-height: 6rem;
+        max-height: 8rem;
+    }
+    
+    .logo {
+        padding-top: 0%;
+        padding-left: 2%;
+    }
+    
+}
+
+@media  screen and (min-width: 1200px) and (max-width: 1400px) {
+    
+        header {
+            height: auto;
+        }
+    
+        .contact-banner {
+            display: none;
+        }
+    
+        .menu-container {
+            display: none;
+        }
+    
+        .menu-container-mobile {
+            height: 100vh;
+            width: 15%;
+            position: absolute;
+            top: 40%;
+            right: -5%;
+            display: flex;
+            flex-direction: column;
+            transition-duration: 0.6s;
+            transition: width 1.5s;
+        }
+    
+        .on {
+            width: 40%;
+            background-color: rgba(241, 241, 241, 0.9);
+        }
+    
+        .off {
+            width: 10%;
+            background-color: transparent;
+        }
+    
+        #hamburger-button:checked+label>img {
+            transform: rotate(-90deg);
+        }
+        
+        .menu-container-mobile ul {
+            height: 30%;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        
+        }
+        
+        .menu-container-mobile li {
+            height: 100%;
+            width: 95%;
+            align-items: center;
+            align-content: center;
+            display: flex;
+            padding-left: 5%;
+        }
+        
+        .language-selector-mobile {
+            padding-top: 5%;
+            padding-left: 5%;
+            width: 50%;
+            height: 5%;
+        }
+        
+        .language-selector-mobile select {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .btn {
+            padding-bottom: 11%;
+        }
+        
+        .mobile-navbar {
+            opacity: 0.6;
+            transition: opacity 0.6s ease 0s;
+            opacity: 0;
+        }
+        
+        .mobile-navbar .active {
+            color: #fff;
+        }
+        
+        .mobile-navbar a {
+            color: #393e46;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            font-size: large;
+        }
+        
+        .logo img {
+            max-height: 8rem;
+        }
+        
+        .logo {
+            padding-top: 0%;
+            padding-left: 2%;
+        }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+
+    header {
+        height: auto;
     }
 
     .navbar a {
-        font-size: 17px;
-    }
-
-    .language-selector select {
-        margin-bottom: 12%;
+        font-size: 1.2em;
     }
 }
-
-@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
-
-    .logo  {
-        padding-top: 3%;
-    }
-
-    .logo img {
-        max-height: 7rem;
-    }
-
-    .on {
-        background-color: rgba(241, 241, 241, 0.9);
-    }
-}
-
-@media only screen and (width: 1180px) and (height: 820px) and (orientation:landscape) {
-
-
-    .logo {
-        padding-top: 3%;
-    }
-    
-    .on {
-        background-color: rgba(241, 241, 241, 0.9);
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
-    
-    header {
-        height: 12%;
-    }
-
-    .logo {
-        padding-top: 4%;
-    }
-
-    .logo img {
-        max-height: 8rem;
-    }
-    
-    .on {
-        background-color: rgba(241, 241, 241, 0.9);
-    }
-    
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape) {
-    
-    .logo img {
-        max-height: 8rem;
-    }
-    
-    .language-selector select {
-        margin-bottom: 0%;
-        margin-top: 10%;
-    }
-    
-}
-
 
 /*#endregion MOBILE HEADER */
 
@@ -1416,7 +1560,7 @@ tbody tr:last-child td {
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 600px) and (max-width: 835px) {
 
     .our-med-services {
             padding: 15% 5% 5% 5%;
@@ -1517,7 +1661,7 @@ tbody tr:last-child td {
     }
 }
 
-@media only screen and (min-width: 835px) and (max-width: 1200px) {
+@media only screen and (min-width: 835px) and (max-width: 1024px) {
 
     .our-med-services {
             padding-top: 10%;
@@ -1610,49 +1754,6 @@ tbody tr:last-child td {
     .next {
         width: 8%;
     }
-}
-
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
-
-    .diagnose-img {
-        margin-left: 10%;
-        margin-top: 10%;
-    }
-
-    .hospital-img {
-        margin-top: 5%;
-    }
-
-    .calendar-img {
-        width: 35%;
-        height: 30%;
-        margin-top: 10%;
-        margin-bottom: 5%;
-    }
-
-    .suitcase-img {
-        margin-top: 9%;
-    }
-}
-
-@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
-
-    .prev {
-        width: 8%;
-    }
-
-    .next {
-        width: 8%;
-    }
-}
-
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait) {
-    
-    .our-med-services {
-        padding-top: 15%;
-    }
-    
 }
 
 /*#endregion MOBILE CONTENT*/

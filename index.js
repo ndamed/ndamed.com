@@ -181,28 +181,32 @@ async function setLanguage() {
     let img2 = document.getElementById("img2");
     let img3 = document.getElementById("img3");
 
-    if (currentLanguage === "de" || currentLanguage === "nl") {
-        if (img) {
-            img.classList.add("img1-alternative");
-        }
-        if (img2) {
-            img2.classList.add("img2-alternative");
-        }
-        if (img3) {
-            img3.classList.add("img3-alternative");
-        }
-    }
-    else {
-        if (img) {
-            img.classList.remove("img1-alternative");
-        }
-        if (img2) {
-            img2.classList.remove("img2-alternative");
-        }
-        if (img3) {
-            img3.classList.remove("img3-alternative");
-        }
-    }
+    console.log(window.innerWidth);
+    var logoclass = document.getElementsByClassName("main-header")[0];
+    // logoclass.innerHTML += window.innerWidth;
+
+    // if (currentLanguage === "de" || currentLanguage === "nl") {
+    //     if (img) {
+    //         img.classList.add("img1-alternative");
+    //     }
+    //     if (img2) {
+    //         img2.classList.add("img2-alternative");
+    //     }
+    //     if (img3) {
+    //         img3.classList.add("img3-alternative");
+    //     }
+    // }
+    // else {
+    //     if (img) {
+    //         img.classList.remove("img1-alternative");
+    //     }
+    //     if (img2) {
+    //         img2.classList.remove("img2-alternative");
+    //     }
+    //     if (img3) {
+    //         img3.classList.remove("img3-alternative");
+    //     }
+    // }
 
     languageBasedDictionary.forEach(element => {
         let htmlElement = document.getElementById(element.id)
