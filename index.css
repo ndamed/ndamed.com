@@ -299,7 +299,7 @@ header {
     }
 
     .logo img {
-        max-height: 5.5rem;
+        max-height: 5.3rem;
     }
 
     .logo {
@@ -779,6 +779,7 @@ main {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 0;
+    text-align: justify;
 }
 
 .content h5 {
@@ -976,6 +977,7 @@ section {
     font-size: 18px;
     padding: 2%;
     margin: 1%;
+    text-align: justify;
 }
 
 .ndamed-img {
@@ -1010,6 +1012,7 @@ section {
     padding-left: 3%;
     padding-right: 3%;
     letter-spacing: 0.2px;
+    text-align: justify;
 }
 
 summary {
@@ -1311,12 +1314,15 @@ summary {
 
     .content h6 {
         padding-left: 5%;
+        padding-right: 5%;
         word-spacing: 1px;
         font-size: small;
+        text-align: justify;
     }
 
     .content h5 {
         font-size: small;
+        padding-left: 5%;
     }
 
     .content ul {
@@ -1356,13 +1362,13 @@ summary {
     .sum2,
     .sum4,
     .sum5 {
-        width: 80%;
+        width: 75%;
         height: auto;
         margin-bottom: 5%;
     }
 
     .sum3 {
-        width: 80%;
+        width: 75%;
         height: auto;
         margin-bottom: 5%;
 
@@ -1376,14 +1382,17 @@ summary {
         position: relative;
         top: 10%;
         height: 15%;
+        padding: 2%;
     }
 
     .contact-line p {
         font-size: small;
+        margin: 2%;
+        text-align: justify;
     }
 
     .contact-button {
-        width: 35%;
+        width: auto;
         height: 40%;
         margin: 0;
     }
@@ -1415,6 +1424,11 @@ summary {
         width: 85%;
     }
 
+    .ndamed-content p {
+        text-align: justify;
+        margin: 5%;
+    }
+
     .ndamed-img {
         width: 40%;
         height: 40%;
@@ -1427,6 +1441,12 @@ summary {
         height: fit-content;
         margin-top: 3%;
         justify-content: center;
+        padding-left: 0%;
+    }
+
+    .isqua-line p {
+        text-align: justify;
+        margin: 5%;
     }
 
     .isqua-img {
@@ -1452,6 +1472,7 @@ summary {
     .content h6 {
         font-size: small;
         word-wrap: break-word;
+        text-align: justify;
     }
 
     .content h1 {
@@ -1541,6 +1562,7 @@ summary {
 
     .contact-line p {
         font-size: medium;
+        text-align: justify;
     }
 
     .contact-button {
@@ -1568,6 +1590,7 @@ summary {
 
     .isqua-line {
         height: auto;
+        text-align: justify;
     }
 }
 
@@ -1600,6 +1623,7 @@ summary {
 
     .content h6 {
         padding-left: 2%;
+        text-align: justify;
     }
 
     section {
@@ -1659,6 +1683,8 @@ summary {
 
     .contact-line p {
         font-size: medium;
+        text-align: justify;
+        margin: 2%;
     }
 
     .contact-button {
@@ -1683,6 +1709,11 @@ summary {
 
     .isqua-line {
         height: auto;
+        text-align: justify;
+    }
+
+    .ndamed-content p {
+        text-align: justify;
     }
 
 }
@@ -1712,6 +1743,7 @@ summary {
     .content h6 {
         padding-left: 3%;
         padding-right: 5%;
+        text-align: justify;
     }
 
     .content h5 {
@@ -1783,6 +1815,7 @@ summary {
 
     .contact-line p {
         font-size: medium;
+        text-align: justify;
     }
 
     .contact-button {
@@ -1807,6 +1840,11 @@ summary {
 
     .isqua-line {
         height: auto;
+        text-align: justify;
+    }
+
+    .ndamed-content p {
+        text-align: justify;
     }
 
 }
@@ -1836,6 +1874,7 @@ summary {
 
     .content h6 {
         padding-left: 5%;
+        text-align: justify;
     }
 
     .content h5 {
@@ -1931,6 +1970,11 @@ summary {
 
     .isqua-line {
         height: 25%;
+        text-align: justify;
+    }
+
+    .ndamed-content p {
+        text-align: justify;
     }
 
 }
@@ -1960,6 +2004,7 @@ summary {
 
     .content h6 {
         padding-left: 5%;
+        text-align: justify;
     }
     
     .content h5 {
@@ -2051,6 +2096,11 @@ summary {
 
     .isqua-line {
         height: 30%;
+        text-align: justify;
+    }
+
+    .ndamed-content p {
+        text-align: justify;
     }
 
 }
