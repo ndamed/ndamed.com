@@ -205,7 +205,7 @@ header {
 @media  screen and (max-width: 640px) {
 
     header {
-        height: 15%;
+        height: auto;
     }
 
     .contact-banner {
@@ -300,7 +300,7 @@ header {
     }
 
     .logo {
-        padding-top: 6%;
+        padding-top: 0%;
         padding-left: 0;
     }
 
@@ -970,7 +970,7 @@ header {
 /*#region MOBILE MAIN */
 
 /* Small screens (phones) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 
     .main {
         padding-top: 30%;
@@ -1046,7 +1046,7 @@ header {
 }
   
   /* Medium screens (tablets) */
-@media only screen and (min-width: 600px) and (max-width: 835px) {
+@media only screen and (min-width: 640px) and (max-width: 835px) {
 
     .main {
         padding-top: 5%;
@@ -1379,54 +1379,64 @@ footer iframe {
 
 /*#region MOBILE FOOTER */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 
     footer {
         flex-direction: column; /* Change from row to column layout */
         height: auto; /* Allow height to adjust based on content */
         padding: 20px; /* Add some padding for better spacing */
-      }
-    
-      .contact-title-section,
-      .footer-social-media-section {
+  }
+
+  .contact-title-section,
+  .footer-social-media-section {
         text-align: center; /* Center the titles */
         margin-bottom: 20px; /* Add some space below the titles */
-      }
-    
-      .footer-contact-area,
-      .footer-social-media-content {
+  }
+
+  .footer-contact-area,
+  .footer-social-media-content {
         text-align: left; /* Align content to the left */
-      }
-    
-      .footer-social-media-content {
+  }
+
+  .footer-social-media-content {
         display: flex; /* Use flexbox for layout */
         align-items: flex-start; /* Align items vertically */
         align-self: left;
-      }
-    
-      .address-section,
-      .address-section.mail-content,
-      .address-section-whatsapp-content,
-      .instagram-section,
-      .facebook-section {
+  }
+
+  .address-section,
+  .address-section.mail-content,
+  .address-section-whatsapp-content,
+  .instagram-section,
+  .facebook-section {
         margin-bottom: 20px; /* Add spacing between sections */
         display: flex; /* Use flexbox for layout */
         align-items: center; /* Align items vertically */
-      }
-    
-      .address-section img,
-      .footer-social-media.content img {
+  }
+
+  .address-section img,
+  .footer-social-media.content img {
         max-width: 30px; /* Limit the maximum width of images */
         height: auto; /* Maintain aspect ratio */
         margin-right: 10px; /* Add spacing between images and text */
-      }
-    
-      .footer-map-container {
+  }
+
+  .footer-map-container {
         height: 300px; /* Adjust the height of the map */
-      }
+  }
+
+  .abroad-area a {
+    padding-right: 0%;
+    padding-left: 0%;
 }
 
-@media only screen and (min-width: 600px) and (max-width: 835px) {
+.domestic-area a {
+    padding-right: 0%;
+    padding-left: 0%;
+}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 835px) {
 
     footer {
         padding: 10px;

@@ -206,7 +206,7 @@ header {
 @media  screen and (max-width: 640px) {
 
     header {
-        height: 15%;
+        height: auto;
     }
 
     .contact-banner {
@@ -301,7 +301,7 @@ header {
     }
 
     .logo {
-        padding-top: 6%;
+        padding-top: 0%;
         padding-left: 0;
     }
 
@@ -2031,7 +2031,7 @@ footer iframe {
 
 /*#region MOBILE FOOTER */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 
     footer {
         flex-direction: column;
@@ -2091,9 +2091,19 @@ footer iframe {
         height: 300px;
         /* Adjust the height of the map */
     }
+
+    .abroad-area a {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    .domestic-area a {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 834px) {
+@media only screen and (min-width: 640px) and (max-width: 834px) {
 
     footer {
         padding: 10px;
@@ -2168,7 +2178,6 @@ footer iframe {
 /*#endregion MOBILE FOOTER*/
 
 /*#endregion FOOTER*/
-
 
 /*#region KVKK Popup*/
 .bottom-banner {

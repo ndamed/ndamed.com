@@ -205,7 +205,7 @@ header {
 @media  screen and (max-width: 640px) {
 
     header {
-        height: 15%;
+        height: auto;
     }
 
     .contact-banner {
@@ -300,7 +300,7 @@ header {
     }
 
     .logo {
-        padding-top: 6%;
+        padding-top: 0%;
         padding-left: 0;
     }
 
@@ -1800,6 +1800,16 @@ footer iframe {
     .footer-map-container {
         height: 300px;
         /* Adjust the height of the map */
+    }
+
+    .abroad-area a {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    .domestic-area a {
+        padding-right: 0%;
+        padding-left: 0%;
     }
 }
 
