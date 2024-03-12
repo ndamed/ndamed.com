@@ -99,7 +99,7 @@ header {
 
 .logo img {
     align-self: center;
-    max-height: 8rem;
+    max-height: 8.5rem;
 }
 
 .menu-container {
@@ -758,7 +758,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-left: 1%;
-    padding-right: 50%;
+    padding-right: 55%;
     float: left;
     margin-top: 10%;
     padding-bottom: 0;
@@ -767,14 +767,14 @@ main {
 .content h1 {
     font: 400 1.5em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 50px;
-    padding-left: 10%;
+    padding-left: 5%;
     color: #5b9ad5;
     margin-bottom: 2%
 }
 
 .content h6 {
     font: 500 1em/1.4 "Open Sans", "Helvetica Neue", sans-serif;
-    padding-left: 10%;
+    padding-left: 5%;
     color: #393e46;
     font-size: 1.2rem;
     line-height: 1.8;
@@ -784,15 +784,15 @@ main {
 
 .content h5 {
     font: 300 1em/1.2 "Open Sans", "Helvetica Neue", sans-serif;
-    padding-left: 10%;
+    padding-left: 5%;
     color: #393e46;
     margin-bottom: 0;
 }
 
 .hr-1 {
     border: 1px solid #5b9ad5;
-    margin-left: 10%;
-    margin-right: 65%;
+    margin-left: 5%;
+    margin-right: 60%;
     margin-top: 0;
 }
 
@@ -866,7 +866,7 @@ main {
 }
 
 .hand {
-    width: 20%;
+    width: 15%;
     height: 60%;
 }
 
@@ -2379,7 +2379,6 @@ footer iframe {
     border-radius: 5%;
 }
 
-/*#endregion FOOTER*/
 
 /*#region MOBILE FOOTER */
 
@@ -2390,7 +2389,7 @@ footer iframe {
         /* Change from row to column layout */
         height: auto;
         /* Allow height to adjust based on content */
-        padding: 20px;
+        padding: 5%;
         /* Add some padding for better spacing */
     }
 
@@ -2398,8 +2397,6 @@ footer iframe {
     .footer-social-media-section {
         text-align: center;
         /* Center the titles */
-        margin-bottom: 20px;
-        /* Add some space below the titles */
     }
 
     .footer-contact-area,
@@ -2421,7 +2418,7 @@ footer iframe {
     .address-section-whatsapp-content,
     .instagram-section,
     .facebook-section {
-        margin-bottom: 20px;
+        margin-bottom: 1em;
         /* Add spacing between sections */
         display: flex;
         /* Use flexbox for layout */
@@ -2444,15 +2441,27 @@ footer iframe {
         /* Adjust the height of the map */
     }
 
-    .abroad-area a {
-        padding-right: 0%;
-        padding-left: 0%;
+    .abroad-area {
+        padding-bottom: 0%;
     }
 
-    .domestic-area a {
-        padding-right: 0%;
-        padding-left: 0%;
+    .domestic-area {
+        padding-bottom: 0%;
     }
+
+    .abroad-area a {
+        margin-right: 0em;
+    }
+
+    .address-section-whatsapp-content p {
+        margin: 10;
+    }
+
+    .number-section {
+        padding-left: 0%;
+        flex-grow: 1;
+    }
+    
 }
 
 @media only screen and (min-width: 640px) and (max-width: 835px){
@@ -2561,7 +2570,11 @@ footer iframe {
 
 /*#endregion FOOTER*/
 
+
+/*#endregion FOOTER*/
+
 /*#region KVKK Popup*/
+
 .bottom-banner {
     height: auto;
     background-color: var(--dkblue);
@@ -2617,6 +2630,7 @@ footer iframe {
     padding-bottom: 10em;
     z-index: 10000;
     overflow: scroll;
+    text-align: justify;
 }
 
 .kvkk-text {
@@ -2669,5 +2683,125 @@ footer iframe {
 .no-scroll {
     overflow: hidden;
 }
+
+
+/*#region KVKK MOBILE*/
+
+@media only screen and (max-width:640px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:640px) and (max-width:835px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 3em;
+        padding-right: 3em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:835px) and (max-width:1024px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 4em;
+        padding-right: 4em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1200px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 5em;
+        padding-right: 5em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1400px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 6em;
+        padding-right: 6em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:1400px) and (max-width:1600px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 8em;
+        padding-right: 8em;
+        text-align: justify;
+    }
+}
+
+/*#endregion KVKK MOBILE*/
+
 
 /*#endregion KVKK Popup*/

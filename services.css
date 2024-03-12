@@ -97,7 +97,7 @@ header {
 
 .logo img {
     align-self: center;
-    max-height: 8rem;
+    max-height: 8.5rem;
 }
 
 .menu-container {
@@ -2038,7 +2038,7 @@ footer iframe {
         /* Change from row to column layout */
         height: auto;
         /* Allow height to adjust based on content */
-        padding: 20px;
+        padding: 5%;
         /* Add some padding for better spacing */
     }
 
@@ -2046,8 +2046,6 @@ footer iframe {
     .footer-social-media-section {
         text-align: center;
         /* Center the titles */
-        margin-bottom: 20px;
-        /* Add some space below the titles */
     }
 
     .footer-contact-area,
@@ -2069,7 +2067,7 @@ footer iframe {
     .address-section-whatsapp-content,
     .instagram-section,
     .facebook-section {
-        margin-bottom: 20px;
+        margin-bottom: 1em;
         /* Add spacing between sections */
         display: flex;
         /* Use flexbox for layout */
@@ -2092,15 +2090,27 @@ footer iframe {
         /* Adjust the height of the map */
     }
 
-    .abroad-area a {
-        padding-right: 0%;
-        padding-left: 0%;
+    .abroad-area {
+        padding-bottom: 0%;
     }
 
-    .domestic-area a {
-        padding-right: 0%;
-        padding-left: 0%;
+    .domestic-area {
+        padding-bottom: 0%;
     }
+
+    .abroad-area a {
+        margin-right: 0em;
+    }
+
+    .address-section-whatsapp-content p {
+        margin: 10;
+    }
+
+    .number-section {
+        padding-left: 0%;
+        flex-grow: 1;
+    }
+    
 }
 
 @media only screen and (min-width: 640px) and (max-width: 834px) {
@@ -2287,5 +2297,126 @@ footer iframe {
 .no-scroll {
     overflow: hidden;
 }
+
+
+/*#region KVKK MOBILE*/
+
+@media only screen and (max-width:640px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:640px) and (max-width:835px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 3em;
+        padding-right: 3em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:835px) and (max-width:1024px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 4em;
+        padding-right: 4em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:1024px) and (max-width:1200px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 5em;
+        padding-right: 5em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1400px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 6em;
+        padding-right: 6em;
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width:1400px) and (max-width:1600px) {
+
+    .kvkk-exit {
+        top: 1%;
+        right: 1%;
+        padding: 0;
+    }
+
+    .kvkk-scroll-top {
+        padding: 0;
+    }
+
+    .kvkk-popup.active {
+        padding-left: 8em;
+        padding-right: 8em;
+        text-align: justify;
+    }
+}
+
+/*#endregion KVKK MOBILE*/
+
+
 
 /*#endregion KVKK Popup*/
