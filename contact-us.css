@@ -791,6 +791,7 @@ header {
     margin-top: 0;
     font: 300 1.5em/2 "Open Sans", "Helvetica Neue", sans-serif;
     color: var(--dkblue);
+    text-align: justify;
 }
 
 .contact-area {
@@ -996,10 +997,12 @@ header {
 
     .contact-person h4 {
         margin-bottom: 0;
+        font-size: 2em;
     }
 
     .contact-person p {
         margin: 1.5rem;
+        font-size: 1em;
     }
 
     .contact-area {
@@ -1100,8 +1103,50 @@ header {
     }
 }
 
-/*#endregion MOBILE MAIN*/
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
 
+    .contact-person h4 {
+        font-size: 2.5em;
+    }
+
+    .contact-person p {
+        font-size: 1.2em;
+    }
+
+    .contact-area p {
+        font-size: 1.2em;
+    }
+
+    .contact-area a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width:1400px) and (max-width: 1600px) {
+
+    .contact-person img {
+        width: 12rem; /* Adjust as needed */
+        margin-top: 5%;
+    }
+
+    .contact-person h4 {
+        font-size: 2em;
+    }
+
+    .contact-person p {
+        font-size: 1.2em;
+    }
+
+    .contact-area p {
+        font-size: 1.2em;
+    }
+
+    .contact-area a {
+        font-size: 1.2em;
+    }
+}
+
+/*#endregion MOBILE MAIN*/
 
 
 /*#endregion MAIN*/
