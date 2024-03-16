@@ -992,7 +992,7 @@ li {
 
 /*#region ABOUT US MOBILE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     
     .about-part {
         padding-top: 20%;
@@ -1069,7 +1069,7 @@ li {
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 825px) {
+@media only screen and (min-width: 640px) and (max-width: 825px) {
 
     .about-part {
         padding-right: 5%;
@@ -1108,8 +1108,8 @@ li {
     }
 
     .contact-line-mail {
-        width: 85%;
-        height: 85%;
+        width: 5em;
+        height: 5em;
     }
 
     .contact-line p {
@@ -1202,8 +1202,8 @@ li {
     }
 
     .contact-line-mail {
-        width: 95%;
-        height: 95%;
+        width: 5em;
+        height: 5em;
     }
 
     .about-ankara-pics {
@@ -1212,14 +1212,14 @@ li {
 
     .img4 {
         top: 10%;
-        height: 45%;
+        height: 40%;
         width: 60%;
         left: 35%;
     }
 
     .img5 {
         top: 15%;
-        height: 45%;
+        height: 40%;
         width: 60%;
         left: 5%;
     }
@@ -1295,6 +1295,11 @@ li {
         margin-top: 1%;
     }
 
+    .contact-line-mail {
+        width: 5em;
+        height: 5em;
+    }
+
     .ndamed-contact-img {
         width: 10em;
         height: auto;
@@ -1353,8 +1358,8 @@ li {
     }
 
     .contact-line-mail {
-        width: 75%;
-        height: 75%;
+        width: 5em;
+        height: 5em;
     }
 
     .img4 {
@@ -1448,8 +1453,8 @@ li {
     }
 
     .contact-line-mail {
-        width: 65%;
-        height: 65%;
+        width: 5em;
+        height: 5em;
     }
 
     .contact-line h4 {
@@ -1467,7 +1472,6 @@ li {
 }
 
 /*#endregion ABOUT US MOBILE */
-
 
 
 /*#endregion ABOUT US */
@@ -1848,6 +1852,7 @@ footer iframe {
 
     .number-section {
         padding-left: 0%;
+        flex-grow: 0.2;
     }
 
     .domestic-area a {
@@ -1871,6 +1876,14 @@ footer iframe {
     .footer-social-media-section {
         padding-right: 4%;
     }
+
+    .abroad-area {
+        padding-bottom: 0%;
+    }
+
+    .domestic-area {
+        padding-bottom: 0%;
+    }
 }
 
 @media only screen and (min-width: 835px) and (max-width: 1024px) {
@@ -1888,6 +1901,19 @@ footer iframe {
 
     .contacts img {
         padding-bottom: 3%;
+    }
+
+    .number-section {
+        flex-grow: 0.2;
+        padding-left: 0%;
+    }
+
+    .abroad-area {
+        padding-bottom: 0%;
+    }
+
+    .domestic-area {
+        padding-bottom: 0%;
     }
 
 }
@@ -1909,6 +1935,19 @@ footer iframe {
         padding-bottom: 3%;
     }
 
+    .number-section {
+        flex-grow: 0.2;
+        padding-left: 0%;
+    }
+
+    .abroad-area {
+        padding-bottom: 0%;
+    }
+
+    .domestic-area {
+        padding-bottom: 0%;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
@@ -1926,6 +1965,19 @@ footer iframe {
 
     .contacts img {
         padding-bottom: 3%;
+    }
+
+    .number-section {
+        flex-grow: 0.1;
+        padding-left: 0%;
+    }
+
+    .abroad-area {
+        padding-bottom: 0%;
+    }
+
+    .domestic-area {
+        padding-bottom: 0%;
     }
 }
 
