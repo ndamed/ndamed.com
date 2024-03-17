@@ -1038,11 +1038,11 @@ header {
         font-size: 1em;
     }
 
-    .number-section p {
+    .numbers-area p {
         font-size: 1em;
     }
 
-    .number-section a {
+    .numbers-area a {
         padding: 0;
     }
 }
@@ -1502,7 +1502,7 @@ footer iframe {
 
     .number-section {
         padding-left: 0%;
-        flex-grow: 1;
+        flex-grow: 0.2;
     }
     
 }
